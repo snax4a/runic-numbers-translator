@@ -1,0 +1,27 @@
+.root {
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  appearance: none;
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: rgb(17 24 39);
+  padding: 0.6rem 0.75rem;
+  border: 1px solid rgb(209 213 255);
+}
+
+.input::placeholder {
+  color: rgb(133, 135, 163);
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid var(--primary-color);
+}
+
+.error {
+  border-color: rgb(239 68 68);
+}
