@@ -41,8 +41,6 @@ module.exports = {
         groups: [
           // ext library & side effect imports
           ['^@?\\w', '^\\u0000'],
-          // {s}css files
-          ['^.+\\.s?css$'],
           // Lib and hooks
           ['^@/lib', '^@/hooks'],
           // static data
@@ -65,6 +63,8 @@ module.exports = {
             '^\\.\\./\\.\\./\\.\\.(?!/?$)',
           ],
           ['^@/types'],
+          // {s}css files
+          ['^.+\\.s?css$'],
           // other that didnt fit in
           ['^'],
         ],
