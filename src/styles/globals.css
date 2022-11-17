@@ -1,1 +1,20 @@
 @import-normalize; /* bring in normalize.css styles */
+
+:root {
+  font-size: 16px;
+  --bg-root: #f8fafc;
+  --bg-primary: #ffffff;
+  --text-color: #334155;
+  --primary-color: #f59e0b;
+  --font-inter: 'Inter', sans-serif;
+  --shadow-xs: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  color: var(--text-color);
+  background-color: var(--bg-root);
+  font-family: var(--font-inter);
+}

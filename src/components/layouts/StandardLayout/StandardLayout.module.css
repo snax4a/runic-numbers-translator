@@ -1,0 +1,16 @@
+.root {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.container {
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
