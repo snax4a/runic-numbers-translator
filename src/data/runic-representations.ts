@@ -42,7 +42,7 @@ export const runicRepresentations: RunicRepresentation[] = [
       { letter: 'v', parameter: '-100' },
       { letter: 'v', parameter: '30' },
       { letter: 'l', parameter: '28,-30' },
-      { letter: 'h', parameter: '-28' },
+      { letter: 'h', parameter: '-29' },
     ],
   },
   {
@@ -124,7 +124,7 @@ export const runicRepresentations: RunicRepresentation[] = [
       { letter: 'v', parameter: '-100' },
       { letter: 'v', parameter: '30' },
       { letter: 'l', parameter: '-28,-30' },
-      { letter: 'h', parameter: '28' },
+      { letter: 'h', parameter: '29' },
     ],
   },
   {
@@ -206,7 +206,7 @@ export const runicRepresentations: RunicRepresentation[] = [
       { letter: 'v', parameter: '98' },
       { letter: 'v', parameter: '-30' },
       { letter: 'l', parameter: '28,30' },
-      { letter: 'h', parameter: '-28' },
+      { letter: 'h', parameter: '-29' },
     ],
   },
   {
@@ -288,7 +288,7 @@ export const runicRepresentations: RunicRepresentation[] = [
       { letter: 'v', parameter: '98' },
       { letter: 'v', parameter: '-30' },
       { letter: 'l', parameter: '-28,30' },
-      { letter: 'h', parameter: '28' },
+      { letter: 'h', parameter: '29' },
     ],
   },
   {

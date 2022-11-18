@@ -13,10 +13,10 @@ import styles from './RunicRepresentation.module.css';
 const EXPORTED_FILE_NAME = 'runic-representation.png';
 
 interface RunicRepresentationProps {
-  pathCommands: PathCommand[];
+  svgPaths: PathCommand[][];
 }
 
-export default function RunicRepresentation({ pathCommands }: RunicRepresentationProps) {
+export default function RunicRepresentation({ svgPaths }: RunicRepresentationProps) {
   const runeRef = React.useRef<HTMLElement>(null);
 
   const handleExportClick = async () => {
@@ -36,9 +36,11 @@ export default function RunicRepresentation({ pathCommands }: RunicRepresentatio
   };
 
   return (
-    <article className={styles.container} id='runic-representation' ref={runeRef}>
+    <article className={styles.container} ref={runeRef}>
       <svg width='236' height='200' viewBox='-48 -1 100 100'>
-        <path className={styles.path} d={generatePath(pathCommands)} />
+        {svgPaths.map((pathCommands, index) => (
+          <path key={index} className={styles.path} d={generatePath(pathCommands)} />
+        ))}
       </svg>
 
       <div className={styles.overlay}>

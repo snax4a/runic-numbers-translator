@@ -29,6 +29,7 @@ export default function TranslatorForm({
   const { formState, register, handleSubmit } = useZodForm({
     defaultValues,
     schema: translatorFormSchema,
+    reValidateMode: 'onSubmit',
   });
 
   return (
