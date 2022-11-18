@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  overflow: hidden;
+}
+
+.container > svg {
+  transition: 400ms filter cubic-bezier(0.35, 0, 0.2, 1);
+}
+
+.container:hover svg {
+  filter: blur(4px);
+}
+
+.path {
+  fill: none;
+  stroke: var(--primary-color);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(51, 65, 85, 0.2);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 400ms transform cubic-bezier(0.2, 0, 0.2, 1);
+
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.overlay > button {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container:hover .overlay {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
